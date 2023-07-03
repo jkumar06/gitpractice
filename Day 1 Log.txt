@@ -1,0 +1,475 @@
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 ~
+$ git version
+git version 2.33.0.windows.2
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 ~
+$ git config --global user.name "jagadeesh"
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 ~
+$ git config --global user.email "kondapalli_kumar@persistent.com"
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 ~
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=jagadeesh
+user.email=kondapalli_kumar@persistent.com
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 ~
+$ git config --global core.editor "Notepad"
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 ~
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=jagadeesh
+user.email=kondapalli_kumar@persistent.com
+core.editor=Notepad
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 ~
+$ cd d:
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 /d
+$ cd GIT_Training
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 /d/GIT_Training
+$ git init
+Initialized empty Git repository in D:/GIT_Training/.git/
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 /d/GIT_Training (master)
+$ ls
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 /d/GIT_Training (master)
+$ cd .git/
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 /d/GIT_Training/.git (GIT_DIR!)
+$ ls
+HEAD  config  description  hooks/  info/  objects/  refs/
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 /d/GIT_Training/.git (GIT_DIR!)
+$ cd ..
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 /d/GIT_Training (master)
+$ git add File.txt
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 /d/GIT_Training (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   File.txt
+
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 /d/GIT_Training (master)
+$ git commit -m "Git Training in Persistent"
+[master (root-commit) d986c5d] Git Training in Persistent
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 File.txt
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 /d/GIT_Training (master)
+$ git log
+commit d986c5d76210b6e8b16ae398d90d587a3d0da804 (HEAD -> master)
+Author: jagadeesh <kondapalli_kumar@persistent.com>
+Date:   Mon Jul 3 12:19:27 2023 +0530
+
+    Git Training in Persistent
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 /d/GIT_Training (master)
+$ git add .
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 /d/GIT_Training (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   File.txt
+
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 /d/GIT_Training (master)
+$ git commit -m "File Modified"
+[master cb1340d] File Modified
+ 1 file changed, 1 insertion(+)
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 /d/GIT_Training (master)
+$ git log
+commit cb1340db7877a489d2f55c9c3e3e476d37b76f42 (HEAD -> master)
+Author: jagadeesh <kondapalli_kumar@persistent.com>
+Date:   Mon Jul 3 12:26:27 2023 +0530
+
+    File Modified
+
+commit d986c5d76210b6e8b16ae398d90d587a3d0da804
+Author: jagadeesh <kondapalli_kumar@persistent.com>
+Date:   Mon Jul 3 12:19:27 2023 +0530
+
+    Git Training in Persistent
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 /d/GIT_Training (master)
+$ git add .
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 /d/GIT_Training (master)
+$  git commit -m "modified"
+[master c94163a] modified
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 /d/GIT_Training (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 /d/GIT_Training (master)
+$ git log
+commit c94163aa7d3b87b1d4e029f1de29e65510e511f9 (HEAD -> master)
+Author: jagadeesh <kondapalli_kumar@persistent.com>
+Date:   Mon Jul 3 12:31:12 2023 +0530
+
+    modified
+
+commit cb1340db7877a489d2f55c9c3e3e476d37b76f42
+Author: jagadeesh <kondapalli_kumar@persistent.com>
+Date:   Mon Jul 3 12:26:27 2023 +0530
+
+    File Modified
+
+commit d986c5d76210b6e8b16ae398d90d587a3d0da804
+Author: jagadeesh <kondapalli_kumar@persistent.com>
+Date:   Mon Jul 3 12:19:27 2023 +0530
+
+    Git Training in Persistent
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 /d/GIT_Training (master)
+$ git add --help
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 /d/GIT_Training (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        A.class
+        b.jar
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 /d/GIT_Training (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        A.class
+        b.jar
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 /d/GIT_Training (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        A.class
+        b.jar
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 /d/GIT_Training (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        A.class
+        b.jar
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 /d/GIT_Training (master)
+$ git add .
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 /d/GIT_Training (master)
+$ git commit -m "config: Added GitIgnore file to ignore class and jar"
+[master a692072] config: Added GitIgnore file to ignore class and jar
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 .gitignore
+ create mode 100644 A.class
+ create mode 100644 b.jar
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 /d/GIT_Training (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 /d/GIT_Training (master)
+$ git log
+commit a692072809a37b83bb571d45971f176c157b2ba1 (HEAD -> master)
+Author: jagadeesh <kondapalli_kumar@persistent.com>
+Date:   Mon Jul 3 12:51:32 2023 +0530
+
+    config: Added GitIgnore file to ignore class and jar
+
+commit c94163aa7d3b87b1d4e029f1de29e65510e511f9
+Author: jagadeesh <kondapalli_kumar@persistent.com>
+Date:   Mon Jul 3 12:31:12 2023 +0530
+
+    modified
+
+commit cb1340db7877a489d2f55c9c3e3e476d37b76f42
+Author: jagadeesh <kondapalli_kumar@persistent.com>
+Date:   Mon Jul 3 12:26:27 2023 +0530
+
+    File Modified
+
+commit d986c5d76210b6e8b16ae398d90d587a3d0da804
+Author: jagadeesh <kondapalli_kumar@persistent.com>
+Date:   Mon Jul 3 12:19:27 2023 +0530
+
+    Git Training in Persistent
+ ESCOC
+57b2ba1 (HEAD -> master)
+istent.com>
+
+
+re class and jar
+
+0e511f9
+istent.com>
+
+
+
+
+7b76f42
+istent.com>
+
+
+
+
+d0da804
+istent.com>
+
+
+
+...skipping...
+57b2ba1 (HEAD -> master)
+istent.com>
+
+
+re class and jar
+
+0e511f9
+istent.com>
+
+
+
+
+7b76f42
+istent.com>
+
+
+
+
+d0da804
+istent.com>
+
+
+
+(END)...skipping...
+57b2ba1 (HEAD -> master)
+istent.com>
+
+
+re class and jar
+
+0e511f9
+istent.com>
+
+
+
+
+7b76f42
+istent.com>
+
+
+
+
+d0da804
+istent.com>
+
+
+
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 /d/GIT_Training (master)
+$ git log
+commit a692072809a37b83bb571d45971f176c157b2ba1 (HEAD -> master)
+Author: jagadeesh <kondapalli_kumar@persistent.com>
+Date:   Mon Jul 3 12:51:32 2023 +0530
+
+    config: Added GitIgnore file to ignore class and jar
+
+commit c94163aa7d3b87b1d4e029f1de29e65510e511f9
+Author: jagadeesh <kondapalli_kumar@persistent.com>
+Date:   Mon Jul 3 12:31:12 2023 +0530
+
+    modified
+
+commit cb1340db7877a489d2f55c9c3e3e476d37b76f42
+Author: jagadeesh <kondapalli_kumar@persistent.com>
+Date:   Mon Jul 3 12:26:27 2023 +0530
+
+    File Modified
+
+commit d986c5d76210b6e8b16ae398d90d587a3d0da804
+Author: jagadeesh <kondapalli_kumar@persistent.com>
+Date:   Mon Jul 3 12:19:27 2023 +0530
+
+    Git Training in Persistent
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 /d/GIT_Training (master)
+$ git log --author="jagadeesh" --oneline
+a692072 (HEAD -> master) config: Added GitIgnore file to ignore class and jar
+c94163a modified
+cb1340d File Modified
+d986c5d Git Training in Persistent
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 /d/GIT_Training (master)
+$ git log --until="07/03/2023"
+commit a692072809a37b83bb571d45971f176c157b2ba1 (HEAD -> master)
+Author: jagadeesh <kondapalli_kumar@persistent.com>
+Date:   Mon Jul 3 12:51:32 2023 +0530
+
+    config: Added GitIgnore file to ignore class and jar
+
+commit c94163aa7d3b87b1d4e029f1de29e65510e511f9
+Author: jagadeesh <kondapalli_kumar@persistent.com>
+Date:   Mon Jul 3 12:31:12 2023 +0530
+
+    modified
+
+commit cb1340db7877a489d2f55c9c3e3e476d37b76f42
+Author: jagadeesh <kondapalli_kumar@persistent.com>
+Date:   Mon Jul 3 12:26:27 2023 +0530
+
+    File Modified
+
+commit d986c5d76210b6e8b16ae398d90d587a3d0da804
+Author: jagadeesh <kondapalli_kumar@persistent.com>
+Date:   Mon Jul 3 12:19:27 2023 +0530
+
+    Git Training in Persistent
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 /d/GIT_Training (master)
+$ git log --since="07/02/2023"
+commit a692072809a37b83bb571d45971f176c157b2ba1 (HEAD -> master)
+Author: jagadeesh <kondapalli_kumar@persistent.com>
+Date:   Mon Jul 3 12:51:32 2023 +0530
+
+    config: Added GitIgnore file to ignore class and jar
+
+commit c94163aa7d3b87b1d4e029f1de29e65510e511f9
+Author: jagadeesh <kondapalli_kumar@persistent.com>
+Date:   Mon Jul 3 12:31:12 2023 +0530
+
+    modified
+
+commit cb1340db7877a489d2f55c9c3e3e476d37b76f42
+Author: jagadeesh <kondapalli_kumar@persistent.com>
+Date:   Mon Jul 3 12:26:27 2023 +0530
+
+    File Modified
+
+commit d986c5d76210b6e8b16ae398d90d587a3d0da804
+Author: jagadeesh <kondapalli_kumar@persistent.com>
+Date:   Mon Jul 3 12:19:27 2023 +0530
+
+    Git Training in Persistent
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 /d/GIT_Training (master)
+$ git log --help
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 /d/GIT_Training (master)
+$ git log -size
+fatal: unrecognized argument: -size
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 /d/GIT_Training (master)
+$ git log --size
+fatal: unrecognized argument: --size
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 /d/GIT_Training (master)
+$ git log size 2
+fatal: ambiguous argument 'size': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 /d/GIT_Training (master)
+$ git log size -2
+fatal: ambiguous argument 'size': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 /d/GIT_Training (master)
+$ git log --size 2
+fatal: ambiguous argument '2': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 /d/GIT_Training (master)
+$ git log .gitignore
+commit a692072809a37b83bb571d45971f176c157b2ba1 (HEAD -> master)
+Author: jagadeesh <kondapalli_kumar@persistent.com>
+Date:   Mon Jul 3 12:51:32 2023 +0530
+
+    config: Added GitIgnore file to ignore class and jar
+
+kondapalli_kumar@PSL-466Q7R3 MINGW64 /d/GIT_Training (master)
+$
