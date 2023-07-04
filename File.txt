@@ -1,6 +1,9 @@
 Hi to Git Session
 timing are 10 to 1
 Session Day 2 started
+
 good mrg guys
 will also cover undo/Revert/reset on Day 2
 will see the deference between them
+
+good mrg guys
