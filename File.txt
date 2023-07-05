@@ -1,5 +1,5 @@
 Hi to Git Session
-timing are 10 to 1
+timing are 10:30AM to 1:00 PM
 Session Day 2 started
 
 good mrg guys
@@ -8,6 +8,6 @@ will see the deference between them
 
 good mrg guys
 Function ABC() {
-	// Do Something to fix the bug 123
+	// Adding a line to fix Bug456.
 	// Anonther Line added
 }
