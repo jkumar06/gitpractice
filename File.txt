@@ -1,4 +1,8 @@
-Hi to Git Session
+****Welcome to GIT Session*******
+Session is for half days for 3 days.
+Hi to Git Session!!!
+
+Session is for 3 half days.
 
 Session timing for all 3 days is 10:30AM to 1:00 PM
 
