@@ -1,13 +1,14 @@
 Hi to Git Session
-timing are 10 to 1
+timing are 10:30AM to 1:00 PM
 Session Day 2 started
 
 good mrg guys
 will also cover undo/Revert/reset on Day 2
 will see the deference between them
 
-good mrg guys
+session Day3
 Function ABC() {
-	// Do Something to fix the bug 123
-	// Anonther Line added
+	// Adding a line to fix Bug456.
+	// Another Line added
+	//CR2: Changes done.
 }
